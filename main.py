@@ -30,7 +30,12 @@ def get_detection_folder():
 
 if __name__ == '__main__':
 
-    st.title('YOLOv5 Streamlit App')
+    st.title("交通视频/图像目标检测系统")
+    st.markdown(
+        "<small style='color: gray;'>来源：第一届“数据链杯”人工智能算法大赛 · 腾宇悦团队</small>",
+        unsafe_allow_html=True
+    )
+
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str,
